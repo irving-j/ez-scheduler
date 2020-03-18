@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -11,6 +11,6 @@ class Message extends Model
      */
     public function recipients()
     {
-        return $this->belongsToMany('App\Employee', 'employees_messages')->withTimestamps();
+        return $this->belongsToMany('App\models\Employee', 'employees_messages')->withTimestamps();
     }
 }

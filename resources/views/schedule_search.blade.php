@@ -8,7 +8,7 @@
         <input type="text" id="search-sched-patient-by-id" size="4"/>
         <select class="patientSelection" name="patient" id="schedule-patient" >
             <option value="default" selected>Select patient:</option>
-            @foreach(App\Patient::orderBy('last_name')->get() as $patient)
+            @foreach(App\models\Patient::orderBy('last_name')->get() as $patient)
 	            <option id="{{ $patient->id }}" value="{{ $patient->id }}">{{ $patient->last_name .','.$patient->first_name .' ('.$patient->id.')' }}</option>
 	        @endforeach
         </select>

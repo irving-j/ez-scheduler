@@ -7,7 +7,7 @@
             <label style="margin-right:10px;display:inline-block;width:100px">Start date: </label><label style="display:inline-block;width:100px">End date:</label><br/>
             <select class="employee-selection" id="ts-select-employee" name="employee_id">
                 <option value="default" selected>Select employee</option>
-                @foreach(App\Employee::orderBy('last_name')->get() as $employee)
+                @foreach(App\models\Employee::orderBy('last_name')->get() as $employee)
                 <option id="{{ $employee->id }}" value="{{ $employee->id }}">{{ $employee->last_name .','.$employee->first_name .' ('.$employee->id.')' }}</option>
                 @endforeach
             </select>

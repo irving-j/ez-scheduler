@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -11,7 +11,7 @@ class Timesheet extends Model
      */
     public function employee()
     {
-        return $this->belongsTo('App\Employee')->withTimestamps();
+        return $this->belongsTo('App\models\Employee')->withTimestamps();
     }
 
     /**

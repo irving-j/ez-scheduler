@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
-use App\Timesheet; 
-use App\Employee;
-use App\Schedule;
-use App\Patient;
+use App\models\Timesheet; 
+use App\models\Employee;
+use App\models\Schedule;
+use App\models\Patient;
 use DateTime;
 class TimesheetController extends Controller
 {

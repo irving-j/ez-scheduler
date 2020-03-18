@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-use App\Schedule;
+use models\Schedule;
 
 class ScheduleController extends Controller
 {

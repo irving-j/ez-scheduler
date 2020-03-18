@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 use Illuminate\Http\Request;
-use App\Employee;
-use App\Patient;
-use App\User;
-use App\Location;
+use App\models\Employee;
+use App\models\Patient;
+use App\models\User;
+use App\models\Location;
 
 class EmployeeController extends Controller
 {
@@ -101,7 +101,6 @@ class EmployeeController extends Controller
             ));
         }
         
-
         return ['employee_id' => $employee->id];
     }
 

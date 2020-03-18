@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -12,6 +12,6 @@ class Location extends Model
      */
     public function employees()
     {
-        return $this->belongsToMany('App\Employee', 'employees_locations')->withTimestamps();
+        return $this->belongsToMany('App\models\Employee', 'employees_locations')->withTimestamps();
     }
 }

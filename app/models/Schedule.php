@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -17,7 +17,7 @@ class Schedule extends Model
      */
     public function patient()
     {
-        return $this->belongsTo('App\Patient')->withTimestamps();
+        return $this->belongsTo('App\models\Patient')->withTimestamps();
     }
 
 }

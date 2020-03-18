@@ -3,7 +3,7 @@
 namespace App\Http\Middleware;
 
 use Closure;
-use App\Employee;
+use App\models\Employee;
 use Illuminate\Support\Facades\Auth;
 
 class Admin

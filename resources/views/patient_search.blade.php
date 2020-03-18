@@ -7,7 +7,7 @@
 	        <label> Select a patient:</label>
 	        <select class="patient-selection" name="patient" id="select-patient" >
 	            <option value="default" selected>Select patient</option>
-	            @foreach(App\Patient::orderBy('last_name')->get() as $patient)
+	            @foreach(App\models\Patient::orderBy('last_name')->get() as $patient)
 	            <option id="{{ $patient->id }}" value="{{ $patient->id }}">{{ $patient->last_name .','.$patient->first_name .' ('.$patient->id.')' }}</option>
 	        	@endforeach
 	        </select>

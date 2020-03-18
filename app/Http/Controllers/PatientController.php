@@ -4,9 +4,9 @@ namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
 use Response;
-use App\Patient;
-use App\Schedule;
-use App\Employee;
+use App\models\Patient;
+use App\models\Schedule;
+use App\models\Employee;
 
 class PatientController extends Controller
 {

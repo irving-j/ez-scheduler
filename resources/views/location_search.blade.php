@@ -6,7 +6,7 @@
         <legend>Search locations:</legend><br/>
         <select class="locationSelection" name="location" id="select-location" >
         	<option value="default" selected>Select location</option>
-        	@foreach(App\Location::orderBy('name')->get() as $location)
+        	@foreach(App\models\Location::orderBy('name')->get() as $location)
             <option id="{{ $location->id }}" value="{{ $location->id }}">{{ $location->name . '(' . $location->id . ')' }}</option>
         	@endforeach
         </select>

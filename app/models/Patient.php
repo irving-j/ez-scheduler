@@ -1,6 +1,6 @@
 <?php
 
-namespace App;
+namespace App\models;
 
 use Illuminate\Database\Eloquent\Model;
 
@@ -12,7 +12,7 @@ class Patient extends Model
      */
     public function employees()
     {
-        return $this->belongsToMany('App\Employee', 'employees_patients')->withTimestamps();
+        return $this->belongsToMany('App\models\Employee', 'employees_patients')->withTimestamps();
     }
 
     /**
@@ -20,6 +20,6 @@ class Patient extends Model
      */
     public function schedules()
     {
-        return $this->hasMany('App\Schedule')->withTimestamps();
+        return $this->hasMany('App\models\Schedule')->withTimestamps();
     }
 }
